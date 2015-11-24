@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	div.container
+	center
+		h1 Smart Photo Gallery
+		div.row
+			div.col-sm-6.col-md-4.col-md-offset-4
+				h1.text-center.login-title Please Sign In
+					div.account-wall
+						img(class='profile-img', src='https://s.yimg.com/fz/api/res/1.2/KKlPZwtflRHk4ppjRRT4pA--/YXBwaWQ9c3JjaGRkO2g9MzI2NDtxPTk1O3c9NDkyOA--/http://simsa.dsu.dal.ca/wp-content/uploads/2014/04/dsc_0585.png')
+						form(class='form-signin', action='/login', method='POST')
+							input(type='text', name='username' class='form-control', placeholder='Username',required, autofocus)
+							input(type='password', name='password' class='form-control', placeholder='Password', required)
+							button(class='btn btn-lg btn-primary btn-block', type='submit') Sign in
+							span.clearfix
+					a(href='/signup', class='text-center new-account') Create an account
+					#message
+					if message
+						h1.text-center.error-message #{message}
