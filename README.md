@@ -1,2 +1,2 @@
 # photowebsite
-Mainly about using nodejs mongodb express to formulate a registration and login system
+There are many softwares used in this project such as NodeJS Express, MongoDB(NoSQL), AWS server and so on. Customers could create personal files and login to our website.
